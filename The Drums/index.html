@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- ==== style sheet ==== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    
+    <title>Rotating Circle Hamburger Menu Example</title>
+</head>
+
+<body>
+    <h1 id="title">The Drums ♪♬</h1>
+    <div class="menu">
+        <div class="btn trigger">
+            <span class="line"></span>
+        </div>
+        <div class="icons">
+            <div class="rotater">
+                <div class="btn btn-icon drum ">
+                    <i class="letter k">k</i>
+                </div>
+            </div>
+            <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter l">l</i>
+                </div>
+            </div>
+            <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter w">w</i>
+                </div>
+            </div>
+            <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter a">a</i>
+                </div>
+            </div>
+            <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter s">s</i>
+                </div>
+                </div>
+                <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter d">d</i>
+                </div>
+            </div>
+            <div class="rotater">
+                <div class="btn btn-icon drum">
+                    <i class="letter j">j</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".trigger").click(function () {
+                $(".menu").toggleClass("active");
+            });
+        });
+    </script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
